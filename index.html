@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/all.min.css">
+    <link rel="stylesheet" href="./Css/Normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+    <title>Male Fashion</title>
+    <link rel="icon" href="./Imgs/clothes-hanger.png">
+</head>
+
+<body>
+    <!-- Start of Nav -->
+    <div class="nav">
+        <img src="./Imgs/logo.png" alt="">
+        <ul>
+            <li class="ll"><a href="./index.html" style="color:#1428B2; border-bottom:1px solid #1428B2 ">Home</a></li>
+            <li class="ll"><a href="./About.Html">About</a></li>
+            <li class="ll"><a href="./contact.html">Contact Us</a></li>
+        </ul>
+        <div class="cart-icon" style="cursor:pointer ;">
+            <p class=" cart-number">0</p>
+            <img src="./Imgs/shopping-cart.png" style="width: 30px ;" alt="">
+            <h4 style="margin-left:5px ;">Cart</h4>
+        </div>
+    </div>
+    <!-- End of Nav -->
+
+    <!-- Start of final order -->
+    <div class="placed-order">
+        <img src="./Imgs/success-icon-10.png" alt="">
+        <h2>Order Was Placed Successfully</h2>
+        <p></p>
+        <button class="continue-shopping">Continue Shopping</button>
+    </div>
+    <!-- End of final order -->
+
+    <!-- Start of Cart -->
+    <div class="cart">
+        <div class="cart-row">
+            <h2>Shopping Cart</h2>
+            <div>
+                <h2 class="price" style="display:inline-block ;">Total Price:$0</h2>
+                <button class="place-order">Place Order</button>
+            </div>
+        </div>
+    </div>
+    <!-- End of Cart -->
+
+    <div class="container">
+        <img src="./Imgs/arrow.png" alt="" class="up" style="cursor:pointer ;">
+        <!-- Start of Slider -->
+        <div class="slider">
+            <div class="but">
+                <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="slide slide1">
+                <div>
+                    <p><span>Summer Collectiom</span></p>
+                    <h1>Fall-Winter <br>Collections 2022</h1>
+                    <p>A specialist label creating luxury essentials.Ethically crafted<br> with an unwavering commitment
+                        to
+                        exceptional quality.</p>
+                    <button class="shopNow" onclick="scrollToShopping()">Shop Now</button>
+                    <div class="social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide2"
+                style="position:absolute;top:0; background-image: url('../Imgs/Slider/hero-2.jpg');transform: translateX(100%);">
+                <div>
+                    <p><span>Summer Collectiom</span></p>
+                    <h1>Up to 50% Discount</h1>
+                    <p>Order Now free shipping with only one day delivery.</p>
+                    <button class="shopNow" onclick="scrollToShopping()">Shop Now</button>
+                </div>
+            </div>
+            <div class="slide slide3"
+                style="position:absolute;top:0; background-image: url('../Imgs/Slider/hero-3.jpg');transform: translateX(200%);">
+                <div>
+                    <h1>Male Fashion</h1>
+                    <p>#1 in Men's Clothes.</p>
+                    <button class="shopNow" onclick="scrollToShopping()">Shop Now</button>
+                </div>
+            </div>
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+        <!-- End of Slider -->
+        <!-- Start of content -->
+        <div class="content">
+            <div class="content-row row1">
+                <div>
+                    <h1>Clothing<br>Collections 2022</h1>
+                    <p onclick="scrollToShopping()" style="cursor: pointer;">Shop Now</p>
+                </div>
+                <img src="./Imgs/content/banner-1.jpg" alt="">
+            </div>
+            <div class="content-row row2">
+                <img src="./Imgs/content/banner-2.jpg" alt="">
+                <div>
+                    <h1>Accessories</h1>
+                    <p onclick="scrollToShopping()" style="cursor: pointer;">Shop Now</p>
+                </div>
+            </div>
+            <div class="content-row row3">
+                <div>
+                    <h1>Shoe Spring<br>2022</h1>
+                    <p onclick="scrollToShopping()" style="cursor: pointer;">Shop Now</p>
+                </div>
+                <img src="./Imgs/content/banner-3.jpg" alt="">
+            </div>
+        </div>
+        <!-- End of content -->
+    </div>
+
+    <!-- start of Products -->
+    <div class="shop">
+        <div class="products">
+            <div>
+                <p class="1" onclick="filterItems(event)">All Products</p>
+                <p class="2" onclick="filterItems(event,'New')">New Arrivals</p>
+                <p class="3" onclick="filterItems(event,'Hot')">Hot Sales</p>
+            </div>
+        </div>
+        <div class="items">
+            <div class="item" onmouseover="showAddTocrate(event)">
+                <div class="pro-image" style="position: relative;">
+                    <label>Hot</label>
+                    <img class="1" src="/Imgs/Products/product-1.jpg" alt="">
+                </div>
+                <div class="addtocart">
+                    <i class="1 fa-solid fa-cart-plus" onclick="increaseCartNumber(event)"></i>
+                </div>
+                <div class="product-details">
+                    <h2>Piqué Biker Shoe</h2>
+                    <h2>$67.24</h2>
+                </div>
+            </div>
+            <div class="item" onmouseover="showAddTocrate(event)">
+                <div class="pro-image" style="position: relative;">
+                    <label>Hot</label>
+                    <img class="2" src="/Imgs/Products/product-2.jpg" alt="">
+                </div>
+                <div class="addtocart">
+                    <i class="2 fa-solid fa-cart-plus" onclick="increaseCartNumber(event)"></i>
+                </div>
+                <div class="product-details">
+                    <h2>Piqué Biker Jacket</h2>
+                    <h2>$120</h2>
+                </div>
+            </div>
+            <div class="item" onmouseover="showAddTocrate(event)">
+                <div class="pro-image" style="position: relative;">
+                    <label>Hot</label>
+                    <img class="3" src="/Imgs/Products/product-14.jpg" alt="">
+                </div>
+                <div class="addtocart">
+                    <i class="3 fa-solid fa-cart-plus" onclick="increaseCartNumber(event)"></i>
+                </div>
+                <div class="product-details">
+                    <h2>Piqué Biker Glasses</h2>
+                    <h2>$80</h2>
+                </div>
+            </div>
+            <div class="item" onmouseover="showAddTocrate(event)">
+                <div class="pro-image" style="position: relative;">
+                    <label>Hot</label>
+                    <img class="4" src="/Imgs/Products/product-4.jpg" alt="">
+                </div>
+                <div class="addtocart">
+                    <i class="4 fa-solid fa-cart-plus" onclick="increaseCartNumber(event)"></i>
+                </div>
+                <div class="product-details">
+                    <h2>Piqué Biker Jacket</h2>
+                    <h2>$92</h2>
+                </div>
+            </div>
+            <div class="item" onmouseover="showAddTocrate(event)">
+                <div class="pro-image" style="position: relative;">
+                    <label>New</label>
+                    <img class="5" src="/Imgs/Products/product-5.jpg" alt="">
+                </div>
+                <div class="addtocart">
+                    <i class="5 fa-solid fa-cart-plus" onclick="increaseCartNumber(event)"></i>
+                </div>
+                <div class="product-details">
+                    <h2>Piqué Biker T-shirt</h2>
+                    <h2>$110</h2>
+                </div>
+            </div>
+            <div class="item" onmouseover="showAddTocrate(event)">
+                <div class="pro-image" style="position: relative;">
+                    <label>New</label>
+                    <img class="6" src="/Imgs/Products/product-6.jpg" alt="">
+                </div>
+                <div class="addtocart">
+                    <i class="6 fa-solid fa-cart-plus" onclick="increaseCartNumber(event)"></i>
+                </div>
+                <div class="product-details">
+                    <h2>Piqué Biker Scarf</h2>
+                    <h2>$200</h2>
+                </div>
+            </div>
+            <div class="item" onmouseover="showAddTocrate(event)">
+                <div class="pro-image" style="position: relative;">
+                    <label>New</label>
+                    <img class="7" src="/Imgs/Products/product-7.jpg" alt="">
+                </div>
+                <div class="addtocart">
+                    <i class="7 fa-solid fa-cart-plus" onclick="increaseCartNumber(event)"></i>
+                </div>
+                <div class="product-details">
+                    <h2>Piqué Biker bag</h2>
+                    <h2>$150</h2>
+                </div>
+            </div>
+            <div class="item" onmouseover="showAddTocrate(event)">
+                <div class="pro-image" style="position: relative;">
+                    <label>New</label>
+                    <img class="8" src="/Imgs/Products/product-8.jpg" alt="">
+                </div>
+                <div class="addtocart">
+                    <i class="8 fa-solid fa-cart-plus" onclick="increaseCartNumber(event)"></i>
+                </div>
+                <div class="product-details">
+                    <h2>Piqué Biker T-shirt</h2>
+                    <h2>$199</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of products -->
+
+    <!-- Start Of Footer  -->
+    <div class="footer">
+        <div class="div1">
+            <img src="./Imgs/footer-logo.png" alt="">
+            <p>The customer is at the heart of our unique business model, which includes design.</p>
+            <img src="./Imgs/payment.png" alt="">
+        </div>
+        <div class="div2">
+            <ul>
+                <li class="li1" style="margin-bottom: 30px !important; color: white;">Shopping</li>
+                <li class="li">Contact Us</li>
+                <li class="li">Payment Methods</li>
+                <li class="li">Delivery</li>
+                <li class="li">Return & Exchange</li>
+            </ul>
+        </div>
+        <div class="div3">
+            <ul>
+                <li class="li1" style="margin-bottom: 30px !important; color: white;">Shopping</li>
+                <li class="li">Clothing Store</li>
+                <li class="li">Trending Shoes</li>
+                <li class="li">Accessories</li>
+                <li class="li">Sale</li>
+            </ul>
+        </div>
+        <div class="div4" style="position:relative ;">
+            <h2 style="color:white">NEWLETTER</h2>
+            <p>Be the First to know about new arrivals,look books,sales & promos!</p>
+            <input type="email" name="Email" id="email" placeholder="Your Email">
+            <i class="fa-regular fa-envelope"></i>
+        </div>
+    </div>
+    <!-- End of Footer-->
+
+    <script src="./Js/App.js"></script>
+</body>
+
+</html>

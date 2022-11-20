@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/Contact.css">
+    <link rel="stylesheet" href="./Css/all.min.css">
+    <link rel="stylesheet" href="./Css/Normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+    <title>Contact Us</title>
+    <link rel="icon" href="./Imgs/comment-alt.png">
+</head>
+
+<body>
+    <div class="nav">
+        <img src="./Imgs/logo.png" alt="">
+        <ul>
+            <li class="ll"><a href="./index.html">Home</a></li>
+            <li class="ll"><a href="./About.Html">About</a></li>
+            <li class="ll"><a href="./contact.html" style="color:#1428B2; border-bottom:1px solid #1428B2 ">Contact
+                    Us</a></li>
+        </ul>
+        <div class="cart-icon" style="cursor:pointer ;visibility: hidden;">
+            <p class=" cart-number">0</p>
+            <img src="./Imgs/shopping-cart.png" style="width: 30px ;" alt="">
+            <h4>Cart</h4>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left-info">
+            <p style="color:red ;">INFORMATION</p>
+            <h1>Contact Us</h1>
+            <p style="color:gray ;">As you might expect of a company that began as a high-end interiors contractor, we
+                pay strict attention.
+            </p>
+            <h3>America</h3>
+            <p style="color:gray ;">195 E Parker Square Dr, Parker, CO 801</p>
+            <p style="color:gray ;">+43 982-314-0958</p>
+            <h3>France</h3>
+            <p style="color:gray ;">109 Avenue Léon, 63 Clermont-Ferrand</p>
+            <p style="color:gray ;">+12 345-423-9893
+            </p>
+        </div>
+        <div class="right-info">
+            <form style="z-index:100 ;" action="">
+                <div
+                    style="display:flex;flex-wrap: wrap; flex-direction: column; align-items: space-between;justify-content: center; width: 600px;">
+                    <div>
+                        <input type="text" name="Name" id="name" placeholder="Name">
+                        <p class="name-validation"> </p>
+                    </div>
+                    <div>
+                        <input type="text" name="Email" id="email" placeholder="Email">
+                        <p class="email-validation"> </p>
+                    </div>
+                    <div>
+                        <input type="password" name="password" id="password" placeholder="Password">
+                        <p class="password-validation"> </p>
+                    </div>
+                    <div>
+                        <textarea name="Message" id="message" cols="78" rows="10"
+                            placeholder="Place Your Message"></textarea>
+                        <p class="message-validation" style="width:max-content ;"> </p>
+                    </div>
+                </div>
+                <button class="submit">CONTACT US</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="div1">
+            <img src="./Imgs/footer-logo.png" alt="">
+            <p>The customer is at the heart of our unique business model, which includes design.</p>
+            <img src="./Imgs/payment.png" alt="">
+        </div>
+        <div class="div2">
+            <ul>
+                <li class="li1" style="margin-bottom: 30px !important; color: white;">Shopping</li>
+                <li class="li">Contact Us</li>
+                <li class="li">Payment Methods</li>
+                <li class="li">Delivery</li>
+                <li class="li">Return & Exchange</li>
+            </ul>
+        </div>
+        <div class="div3">
+            <ul>
+                <li class="li1" style="margin-bottom: 30px !important; color: white;">Shopping</li>
+                <li class="li">Clothing Store</li>
+                <li class="li">Trending Shoes</li>
+                <li class="li">Accessories</li>
+                <li class="li">Sale</li>
+            </ul>
+        </div>
+        <div class="div4" style="position:relative ;">
+            <h2 style="color:white">NEWLETTER</h2>
+            <p>Be the First to know about new arrivals,look books,sales & promos!</p>
+            <input type="email" name="Email" id="emaill" placeholder="Your Email">
+            <i class="fa-regular fa-envelope"></i>
+        </div>
+    </div>
+    <script src="./Js/contact.js"></script>
+</body>
+
+</html>
