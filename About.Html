@@ -21,7 +21,7 @@
     <div class="container1">
         <!-- Start of Nav -->
         <div class="nav">
-            <img src="./Imgs/logo.png" alt="">
+            <img class="logo" src="./Imgs/logo.png" alt="">
             <ul>
                 <li class="ll"><a href="./index.html">Home</a></li>
                 <li class="ll"><a href="./About.Html" style="color:#1428B2; border-bottom:1px solid #1428B2 ">About</a>
@@ -156,6 +156,11 @@
             <i class="fa-regular fa-envelope"></i>
         </div>
     </div>
+    <script>
+        document.querySelector('.logo').addEventListener('click', function () {
+            window.location.assign("./index.html")
+        })
+    </script>
 </body>
 
 </html>
