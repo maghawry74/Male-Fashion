@@ -16,7 +16,7 @@ function emailCheck() {
     console.log(reg.test(email.value))
     if (reg.test(email.value[0])) {
         emailValidation.style.display = "none"
-        reg = /(^[a-zA-Z]{3,12})([^\s@]|[\-\._]?)([a-zA-Z]{3,12}\d{0,7})@((yahoo)|(gmail)|(hotmail)|(outlook)|(aol)|(protonmail)|(zohocorp)|(icloud)|(me)|(mac))\.com/
+        reg = /(^[a-zA-Z]{3,12})([^\s@]|[\-\._]?)([a-zA-Z]{3,12}\d{0,7})@[a-zA-A]{2,6}\.[a-zA-Z]{2,3}/
         if (reg.test(email.value)) {
             emailValidation.style.display = "none"
             return 1
@@ -65,13 +65,13 @@ function nameCheck() {
 }
 function messageCheck() {
     var reg = message.value.split(" ")
-    if (reg.length <= 20) {
+    if (reg.length <= 10) {
         messageValidation.style.display = 'block'
-        messageValidation.innerHTML = "Minimun Message length Should be 20 words."
+        messageValidation.innerHTML = "Minimun Message length Should be 10 words."
         messageValidation.style.color = "red"
         return 0
     } else {
-        if (/\s{20,60}/g.test(message.value)) {
+        if (/\s{10,60}/g.test(message.value)) {
             messageValidation.style.display = 'block'
             messageValidation.innerHTML = "Message Can't Be Empty."
             messageValidation.style.color = "red"
@@ -147,4 +147,7 @@ message.addEventListener('input', messageCheck)
 password.addEventListener('input', passwordCheck)
 submitButton.addEventListener('click', function (e) {
     submitCheck(e)
+})
+document.querySelector('.logo').addEventListener('click', function () {
+    window.location.assign("./index.html")
 })

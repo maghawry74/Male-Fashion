@@ -1,68 +1,70 @@
-*{
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: 'Cairo', sans-serif
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
 }
-
-.path{
-    display: flex;
-    padding: 15px 12.5%;
-    margin: 20px auto;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: start;
-    background-color: #F3F2EE;
+.logo {
+  cursor: pointer;
 }
-.path a{
-    margin-right: 10px;
-    text-decoration: none;
-    color: black;
+.path {
+  display: flex;
+  padding: 15px 12.5%;
+  margin: 20px auto;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  background-color: #f3f2ee;
 }
-.path div a:first-child{
-    cursor: pointer;
+.path a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
 }
-.path div a:nth-child(2){
-    color: gray;
+.path div a:first-child {
+  cursor: pointer;
 }
-.cont{
-    width:75%;
-    margin: 30px auto;
+.path div a:nth-child(2) {
+  color: gray;
 }
-.info{
-    display: flex;
-    margin-left: 30px;
+.cont {
+  width: 75%;
+  margin: 30px auto;
 }
-.center{
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
+.info {
+  display: flex;
+  margin-left: 30px;
 }
-.left{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 100px;
-    text-align: center;
-    background-color:#F3F2EE ;
+.center {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
 }
-.spon{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 120px;
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  text-align: center;
+  background-color: #f3f2ee;
 }
-.clients{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-basis: 25%;
-    margin-top: 30px;
+.spon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 120px;
 }
-.clients img{
-    margin: 50px;
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: 25%;
+  margin-top: 30px;
 }
-.card{
-    margin-right: 20px;
+.clients img {
+  margin: 50px;
+}
+.card {
+  margin-right: 20px;
 }
